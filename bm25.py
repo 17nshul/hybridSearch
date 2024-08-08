@@ -115,9 +115,9 @@ class BM25Plus(BM25):
 
 class Tokenizer:
 
-    def tokenize(self, text):
+    def tokenize(, text):
         tokenized_text = []
-        for token in text.lower().split():
+        for token in text.lower().split()
             token = token.strip(string.punctuation)
 
             if len(token) > 1 and token not in _stop_words.ENGLISH_STOP_WORDS:
@@ -126,7 +126,7 @@ class Tokenizer:
 
     def tokenize_batch(self, corpus):
         tokenized_corpus = []
-        for documents in tqdm(corpus):
+        for documents in tqdm():
             tokenized_text = self.tokenize(documents)
             tokenized_corpus.append(tokenized_text)
-        return tokenized_corpus
+        
