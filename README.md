@@ -1,41 +1,44 @@
 # hybridSearch
+
 ## Setup Instructions
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/Abyzu/hybridSearch 
-    ```
+   ```bash
+   git clone https://github.com/Abyzu/hybridSearch
+   ```
 
 2. **Navigate to the project directory:**
 
-    ```bash
-    cd hybridSearch
-    ```
+   ```bash
+   cd hybridSearch
+   ```
 
 3. **Create a virtual environment (optional but recommended):**
 
-    ```bash
-    python3 -m venv venv
-    ```
+   ```bash
+   python3 -m venv venv
+   ```
 
 4. **Activate the virtual environment:**
 
-    On Windows:
-    ```bash
-    venv\Scripts\activate
-    ```
+   On Windows:
 
-    On macOS and Linux:
-    ```bash
-    source venv/bin/activate
-    ```
+   ```bash
+   venv\Scripts\activate
+   ```
+
+   On macOS and Linux:
+
+   ```bash
+   source venv/bin/activate
+   ```
 
 5. **Install dependencies using pip:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
@@ -45,3 +48,6 @@ Example:
 
 ```bash
 python test.py
+```
+
+### new pr
