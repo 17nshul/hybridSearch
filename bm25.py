@@ -69,6 +69,20 @@ class BM25:
         scores = self.get_scores(query)
         top_n = np.argsort(scores)[::-1][:n]
         return [documents[i] for i in top_n]
+    
+    def get_documents_containing_word(self, word):
+        """
+        Returns a list of documents that contain the given word.
+        """
+        if self.tokenizer:
+            word = self.tokenizer(word)[0]
+
+        documents_containing_word = []
+        for i, doc in enumerate(self.doc_freqs):
+            if word in doc:
+                documents_containing_word.append(i)
+        
+        return documents_containing_word
 
 
 class BM25Plus(BM25):
@@ -115,9 +129,9 @@ class BM25Plus(BM25):
 
 class Tokenizer:
 
-    def tokenize(, text):
+    def tokenize(self, text):
         tokenized_text = []
-        for token in text.lower().split()
+        for token in text.lower().split():
             token = token.strip(string.punctuation)
 
             if len(token) > 1 and token not in _stop_words.ENGLISH_STOP_WORDS:
