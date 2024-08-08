@@ -49,5 +49,3 @@ Example:
 ```bash
 python test.py
 ```
-
-### new pr
